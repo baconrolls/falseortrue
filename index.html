@@ -3,44 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz</title>
+  <title>Latest Blogger Posts</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Quiz</h1>
-  <p>Question 1: What is the capital of France?</p>
-  <input type="text" name="question1">
-  <p>Question 2: What is the largest ocean in the world?</p>
-  <input type="text" name="question2">
-  <p>Question 3: What is the name of the current US president?</p>
-  <input type="text" name="question3">
-  <input type="submit" value="Submit">
-  <?php
-    // Get the user's answers.
-    $question1 = $_POST['question1'];
-    $question2 = $_POST['question2'];
-    $question3 = $_POST['question3'];
-    // Check the answers.
-    if ($question1 == "Paris") {
-      $answer1 = true;
-    } else {
-      $answer1 = false;
-    }
-    if ($question2 == "Pacific Ocean") {
-      $answer2 = true;
-    } else {
-      $answer2 = false;
-    }
-    if ($question3 == "Joe Biden") {
-      $answer3 = true;
-    } else {
-      $answer3 = false;
-    }
-    // Display the results.
-    if ($answer1 && $answer2 && $answer3) {
-      echo "<h1>Congratulations! You got all the answers correct!</h1>";
-    } else {
-      echo "<h1>Sorry, you did not get all the answers correct.</h1>";
-    }
-  ?>
+  <div class="grid-container" id="gridContainer"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
