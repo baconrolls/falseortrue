@@ -1,7 +1,7 @@
 const gridContainer = document.getElementById("gridContainer");
 
 // Replace 'YOUR_BLOGGER_API_KEY' and 'YOUR_BLOG_ID' with your actual API key and blog ID
-const apiKey = 'AIzaSyCC0FV2KHbAUfxxIr-I1sioy1EOfJMbZ3o';
+const apiKey = 'AIzaSyDfvkd0cKnPA50mHhblRmZCEbN5rqIaloY';
 const blogId = '7045434096172710203';
 const maxResults = 9; // Maximum number of latest posts to fetch
 
